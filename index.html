@@ -1,38 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue Counter - CDN</title>
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
-    <div id="app">
-        <h1>Counter is: {{counter}}</h1>
-
-        <button @click="counter++">Increment +1</button>
-        <button @click="decrement">Decrement -1</button>
-    </div>
-</body>
-
-<script>
-    const { createApp, ref } = Vue
-
-    createApp({
-        setup(){
-            const counter = ref(0)
-
-            function decrement(){
-                counter.value -= 1
-            }
-
-            return {
-                counter,
-                decrement
-            }
-        }
-    }).mount("#app")
-</script>
-
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
